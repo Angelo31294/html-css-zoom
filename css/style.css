@@ -15,6 +15,13 @@ body{
 .row{
     display: flex;
 }
+.list-inline{
+    display: flex;
+    list-style: none;
+}
+.list-inline li:not(:last-child){
+    margin-right: 15px;
+}
 
 
 /* --- BUTTON --- */
@@ -67,5 +74,23 @@ main{
 
 footer{
     height: 80px;
-    background-color: aquamarine;
+    background-color: #222222;
+    color: white;
+}
+
+footer .row{
+    height: 100%;
+    align-items: center;
+}
+.col-left{
+    width: 20%; 
+}
+.col-center{
+    width: 75%;
+    text-align: center;
+}
+.col-right{
+    width: 5%;
+    background-color: #4a4a4a;
+    color: #ff1930;
 }
