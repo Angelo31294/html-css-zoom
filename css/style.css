@@ -10,6 +10,13 @@ body{
     height: 100vh;
 }
 
+/* --- COMMON --- */
+
+.row{
+    display: flex;
+}
+
+
 /* --- BUTTON --- */
 
 button{
@@ -32,9 +39,28 @@ header{
 
 main{
     height: calc(100% - 110px);
-    background-color: azure;
     width: 90%;
     margin: auto;
+    overflow-y: auto;
+}
+
+.user{
+    flex-wrap: wrap;
+    position: relative;
+    width: calc(100% / 7 - 5px);
+    margin: 5px;
+}
+
+.user img{
+    width: 100%;
+}
+
+.mic-mute{
+    position: absolute;
+    top: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3px 5px;
 }
 
 /* --- FOOTER --- */
