@@ -4,3 +4,42 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+/* --- BUTTON --- */
+
+button{
+    background-color: #4a4a4a;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 2px 3px;
+}
+
+/* --- HEADER --- */
+
+header{
+    height: 30px;
+    text-align: right;
+    padding: 2px;
+}
+
+/* --- MAIN --- */
+
+main{
+    height: calc(100% - 110px);
+    background-color: azure;
+    width: 90%;
+    margin: auto;
+}
+
+/* --- FOOTER --- */
+
+footer{
+    height: 80px;
+    background-color: aquamarine;
+}
