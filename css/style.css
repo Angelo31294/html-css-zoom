@@ -22,12 +22,21 @@ body{
 
 /* --- BUTTON --- */
 
+
 button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
     background-color: #4a4a4a;
     color: white;
     border-radius: 5px;
     border-color: transparent;
     padding: 2px 3px;
+    font-family: inherit;
 }
 
 /* --- HEADER --- */
@@ -51,7 +60,7 @@ main{
     flex-wrap: wrap;
     position: relative;
     width: calc(100% / 7 - 5px);
-    margin: 5px;
+    margin: 2.5px;
 }
 
 .user img{
@@ -60,7 +69,7 @@ main{
 
 .mic-mute{
     position: absolute;
-    top: 70%;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 3px 5px;
@@ -69,31 +78,31 @@ main{
 /* --- FOOTER --- */
 
 footer{
+    display: flex;
     height: 80px;
     background-color: #222222;
     color: white;
-    text-align: center;
 }
 
-footer .row{
-    height: 100%;
+footer > div{
+    display: flex;
     align-items: center;
 }
-.col-left{
+
+.col-left,{
     width: 10%;
-    display: flex;
-    justify-content: space-around ;
 }
+
 .col-center{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
+    width: 80%;
+    justify-content: center;
 }
+.col-center > div{
+    padding: 15px;
+} 
+
 .col-right{
     width: 10%;
-    background-color: #4a4a4a;
-    color: rgb(250, 52, 52);
-    text-align: center;
-    padding: 30px 0;
+    justify-content: flex-end;
+    color: red;
 }
